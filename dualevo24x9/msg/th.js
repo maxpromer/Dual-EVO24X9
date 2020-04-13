@@ -1,3 +1,4 @@
+/*
 Blockly.Msg.DUAL_EVO24X9_MOTOR_FORWARD_MESSAGE = "%1 Dual EVO24X9 ตำแหน่ง %2 วิ่งไปข้างหน้าที่ความเร็ว %3 %%";
 Blockly.Msg.DUAL_EVO24X9_MOTOR_FORWARD_TOOLTIP = "";
 
@@ -24,3 +25,11 @@ Blockly.Msg.DUAL_EVO24X9_MOTOR_FORWARD_2_TOOLTIP = "";
 
 Blockly.Msg.DUAL_EVO24X9_MOTOR_BACKWARD_2_MESSAGE = "%1 Dual EVO24X9 ตำแหน่ง %2 วิ่งถอยหลังโดยล้อซ้ายความเร็ว %3 %% และล้อขวาความเร็ว %4 %%";
 Blockly.Msg.DUAL_EVO24X9_MOTOR_BACKWARD_2_TOOLTIP = "";
+*/
+
+Blockly.Msg.DUAL_EVO24X9_MOTOR_MESSAGE = "%1 Dual EVO24X9 หมายเลข %2 มอเตอร์ %3 หมุน %4 ที่ความเร็ว %5 %%";
+Blockly.Msg.DUAL_EVO24X9_MOTOR_TOOLTIP = "";
+
+Blockly.Msg.DUAL_EVO24X9_MOTOR_FORWARD_MESSAGE = "ตามเข็มนาฬิกา";
+Blockly.Msg.DUAL_EVO24X9_MOTOR_BACKWARD_MESSAGE = "ทวนเข็มนาฬิกา";
+Blockly.Msg.DUAL_EVO24X9_MOTOR_STOP_MESSAGE = "หยุดหมุน";

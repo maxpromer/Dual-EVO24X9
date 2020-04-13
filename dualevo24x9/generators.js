@@ -1,3 +1,4 @@
+/*
 Blockly.JavaScript['dual_evo24x9_motor_forward'] = function(block) {
 	var dropdown_addr = block.getFieldValue('addr');
 	var value_speed = Blockly.JavaScript.valueToCode(block, 'speed', Blockly.JavaScript.ORDER_ATOMIC) || '0';
@@ -78,4 +79,13 @@ Blockly.JavaScript['dual_evo24x9_motor_backward2'] = function(block) {
 	code += 'DEV_I2C1.DualEVO24X9(0, ' + dropdown_addr + ').motor(1, 2, ' + value_speed1 + ');\t';
 	code += 'DEV_I2C1.DualEVO24X9(0, ' + dropdown_addr + ').motor(2, 2, ' + value_speed2 + ');\n';
 	return code;
+};
+*/
+
+Blockly.JavaScript['dual_evo24x9_motor'] = function(block) {
+	var dropdown_addr = block.getFieldValue('addr');
+	var dropdown_ch = block.getFieldValue('ch');
+	var dropdown_dir = block.getFieldValue('dir');
+	var value_speed = Blockly.JavaScript.valueToCode(block, 'speed', Blockly.JavaScript.ORDER_ATOMIC) || '0';
+	return `DEV_I2C1.DualEVO24X9(0, ${dropdown_addr}).motor(${dropdown_ch}, ${dropdown_dir}, ${value_speed});`;
 };

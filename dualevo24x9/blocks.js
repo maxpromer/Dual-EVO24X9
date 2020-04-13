@@ -1,3 +1,4 @@
+/*
 Blockly.Blocks['dual_evo24x9_motor_forward'] = {
 	init: function() {
 		this.jsonInit({
@@ -349,6 +350,62 @@ Blockly.Blocks['dual_evo24x9_motor_stop'] = {
 			"colour": "#bc8600",
 			"tooltip": Blockly.Msg.DUAL_EVO24X9_MOTOR_STOP_TOOLTIP,
 			"helpUrl": "https://store.kidbright.info/plugin/7/iKB-1"
+		});
+	}
+};
+*/
+
+Blockly.Blocks['dual_evo24x9_motor'] = {
+	init: function() {
+		this.jsonInit({
+			"type": "dual_evo24x9_motor",
+			"message0": Blockly.Msg.DUAL_EVO24X9_MOTOR_MESSAGE,
+			"args0": [{
+				"type": "field_image",
+				"src": "https://sv1.picz.in.th/images/2020/04/13/U7p9TJ.png",
+				"width": 15,
+				"height": 15,
+				"alt": "*",
+				"flipRtl": false
+			}, {
+				"type": "field_dropdown",
+				"name": "addr",
+				"options": [
+ 					[ "0x50", "0x50" ],
+					[ "0x51", "0x51" ],
+					[ "0x52", "0x52" ],
+					[ "0x53", "0x53" ],
+					[ "0x54", "0x54" ],
+					[ "0x55", "0x55" ],
+					[ "0x56", "0x56" ],
+					[ "0x57", "0x57" ]
+				]
+			}, {
+				"type": "field_dropdown",
+				"name": "ch",
+				"options": [
+					[ "1", "1" ],
+					[ "2", "2" ]
+				]
+			}, {
+				"type": "field_dropdown",
+				"name": "dir",
+				"options": [
+					[ Blockly.Msg.DUAL_EVO24X9_MOTOR_FORWARD_MESSAGE, "1" ],
+					[ Blockly.Msg.DUAL_EVO24X9_MOTOR_BACKWARD_MESSAGE, "2" ],
+					[ Blockly.Msg.DUAL_EVO24X9_MOTOR_STOP_MESSAGE, "3" ]
+				]
+			}, {
+				"type": "input_value",
+				"name": "speed",
+				"check": "Number"
+			}],
+			"inputsInline": true,
+			"previousStatement": null,
+			"nextStatement": null,
+			"colour": 60,
+			"tooltip": Blockly.Msg.DUAL_EVO24X9_MOTOR_TOOLTIP,
+			"helpUrl": ""
 		});
 	}
 };
